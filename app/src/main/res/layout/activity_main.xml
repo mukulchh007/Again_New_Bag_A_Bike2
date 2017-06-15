@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.subha.bag_a_bike.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#191970">
+
+
+
+
+        <!--pickup date!-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:id="@+id/location"
+            android:layout_margin="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your location"
+                android:textColor="@android:color/white"
+                android:fontFamily="Bradley Hand ITC"
+                android:textSize="18sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/location"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_height="wrap_content"
+
+                    android:textColorHint="@android:color/white"
+
+                    android:textSize="18sp"
+                    android:singleLine="true"
+                    android:hint="location"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:id="@+id/line8"
+                android:background="@android:color/darker_gray"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:orientation="horizontal"
+            android:id="@+id/line1"
+            android:layout_below="@+id/location"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.25"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/date">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="From"
+                    android:fontFamily="Bradley Hand ITC"
+                    android:textSize="20sp"
+
+                    android:textColor="@android:color/white"
+                    android:id="@+id/fromtext"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/from"
+                        android:src="@drawable/calendar2" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="date"
+                        android:id="@+id/startingday"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:id="@+id/line2"
+                    android:background="@android:color/darker_gray"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="32sp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.25"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/dropdate">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To"
+                    android:fontFamily="Bradley Hand ITC"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/totext"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/to"
+                        android:src="@drawable/calendar2" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="date"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/dropday"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:id="@+id/line5"
+                    android:background="@android:color/darker_gray"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- divider !-->
+
+
+
+        <!-- drop timing !-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            android:id="@+id/line3"
+            android:layout_below="@+id/line1"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.25"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/time">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pick-up"
+                    android:fontFamily="Bradley Hand ITC"
+                    android:textSize="20sp"
+
+                    android:textColor="@android:color/white"
+                    android:id="@+id/fromtexttime"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/pickuptime"
+                        android:src="@drawable/images" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="date"
+                        android:id="@+id/pickup"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:id="@+id/line6"
+                    android:background="@android:color/darker_gray"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="32sp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.25"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/droptime1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drop-off"
+                    android:fontFamily="Bradley Hand ITC"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/drop"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/droptime"
+                        android:src="@drawable/images" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="date"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="12dp"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/droptimetext"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:id="@+id/line7"
+                    android:background="@android:color/darker_gray"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <ListView
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/line3"
+            android:id="@+id/list_item">
+        </ListView>
+
+
+
+        <!-- divider !-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:text="Enjoy Ride"
+            android:onClick="gogo"
+            android:textColor="@android:color/white"
+            android:background="@color/button"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+</ScrollView>
